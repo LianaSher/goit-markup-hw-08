@@ -1,4 +1,9 @@
-.section--padding {
+@media screen and (max-width: 1200px) {
+    .section--occupations {
+        display: none;
+    }
+}
+/*.section--padding {
     padding-top: 0;
 }
 .occupation {
@@ -30,4 +35,4 @@
     padding-bottom: 27px;
     bottom: 0;
     width: 100%;
-}
+}*/
