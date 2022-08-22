@@ -237,17 +237,22 @@ body {
 
 .hero {
   background-color: #c4c4c4;
-  padding: 200px 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpg);
+  padding: 118px 0;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-mobile.jpg);
   background-size: cover;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: url(../../images/bg-mobile@2x.jpg);
+  }
+}
 .hero__title {
-  max-width: 650px;
+  max-width: 360px;
   margin: 0 auto;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 60px;
+  line-height: 42px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -255,6 +260,30 @@ body {
   margin-bottom: 30px;
 }
 
+/*.hero {
+    background-color: #c4c4c4;
+    padding: 200px 0;
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/bg-img.jpg);
+    background-size: cover;
+}
+
+.hero__title {
+    max-width: 650px;
+    margin: 0 auto;
+    @include font(44px, 900, 60px);
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--font-color-on-dark);
+
+    margin-bottom: 30px;
+}*/
 .features {
   display: flex;
   justify-content: center;
@@ -863,6 +892,10 @@ body {
   border: none;
   padding: 0;
   line-height: 0;
+}
+
+.mobileMenu__btn:hover .mobileMenu__iconClose {
+  fill: var(--color-selected);
 }
 
 .mobileNav__link {

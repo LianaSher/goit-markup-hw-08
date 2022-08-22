@@ -39,6 +39,9 @@
     padding: 0;
     line-height: 0;
 }
+.mobileMenu__btn:hover .mobileMenu__iconClose {
+    fill: var(--color-selected);
+}
 
 .mobileNav__link {
     @include font(40px, 500, 47px);
