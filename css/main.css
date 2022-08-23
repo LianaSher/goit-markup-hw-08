@@ -147,6 +147,10 @@ body {
     display: none;
   }
 }
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -897,8 +901,9 @@ body {
 */
 .filterList {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .filterList__item:not(:last-child) {
@@ -928,69 +933,101 @@ body {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
-.projectList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+/*.filterList {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.filterList__item:not(:last-child) {
+    margin-right: 8px;
 }
 
+.filterList__btn {
+    font-family: inherit;
+    @include font(16px, 500, 26px);
+    letter-spacing: 0.03em;
+    display: block;
+    padding: 6px 22px;
+    min-height: 38px;
+    color: var(--font-color-subtitle);
+    border: 1px solid var(--background-light);
+    border-radius: 4px;
+
+    cursor: pointer;
+    background-color: var(--background-light);
+    transition: color var(--transition-dur-fanc),
+        background-color var(--transition-dur-fanc),
+        border var(--transition-dur-fanc), box-shadow var(--transition-dur-fanc);
+    &:hover,
+    &:focus {
+        color: var(--font-color-on-dark);
+        background-color: var(--color-selected);
+        border: 1px solid var(--color-selected);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+            0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+    }
+}*/
+/*.projectList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 .projectList__item {
-  flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 2 * 30px) / 3);
 }
-
 .projectList__link {
-  display: block;
-  transition: box-shadow var(--transition-dur-fanc);
-}
-.projectList__link:hover, .projectList__link:focus {
-  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+    display: block;
+
+    transition: box-shadow var(--transition-dur-fanc);
+    &:hover,
+    &:focus {
+        box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
+            0 4px 4px 0 rgba(0, 0, 0, 0.06);
+    }
 }
 
 .projectList__imgWrapper {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .projectList__card {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
 }
 
 .projectList__title {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--font-color-subtitle);
-  margin-bottom: 4px;
-}
+    @include font(18px, 700, 36px);
 
+    letter-spacing: 0.06em;
+
+    color: var(--font-color-subtitle);
+
+    margin-bottom: 4px;
+}
 .projectList__description {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.875;
-  color: var(--font-color-text);
+    @include font($fs: 16px, $lh: 30px);
+
+    color: var(--font-color-text);
 }
 
 .projectList__overlay {
-  position: absolute;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.5555555556;
-  min-height: 100%;
-  color: var(--font-color-on-dark);
-  background-color: rgba(33, 150, 243, 0.9);
-  width: 100%;
-  top: 0;
-  padding: 63px 24px;
-  overflow: auto;
-  transform: translate(0, 101%);
-  transition: transform var(--transition-dur-fanc);
-}
-.projectList__link:hover .projectList__overlay, .projectList__link:focus .projectList__overlay {
-  transform: translate(0, 0);
-}
-
+    position: absolute;
+    @include font($fs: 18px, $lh: 28px);
+    min-height: 100%;
+    color: var(--font-color-on-dark);
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    top: 0;
+    padding: 63px 24px;
+    overflow: auto;
+    transform: translate(0, 101%);
+    transition: transform var(--transition-dur-fanc);
+    .projectList__link:hover &,
+    .projectList__link:focus & {
+        transform: translate(0, 0);
+    }
+}*/
 .footer {
   background-color: var(--background-dark);
 }
