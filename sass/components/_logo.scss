@@ -1,11 +1,18 @@
 .logo {
     font-family: var(--second-font);
+    @include font(24px, 700, 28px);
+
+    color: var(--color-selected);
+}
+
+/*.logo {
+    font-family: var(--second-font);
     @include font(26px, 700, 30.52px);
 
     color: var(--color-selected);
 
     margin-right: 93px;
-}
+}*/
 .logo__wordSecond {
     color: var(--logo-color);
 }

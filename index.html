@@ -281,12 +281,21 @@
                 <div class="container">
                     <h2 class="section__title">Наша команда</h2>
                     <ul class="list team__list">
-                        <li>
-                            <img
-                                src="images/img-1.jpg"
-                                alt="Фото Игоря Демьяненко"
-                                width="270"
-                            />
+                        <li class="team__item">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/member1.jpg    1x,
+                                        ./images/member1@2x.jpg 2x
+                                    "
+                                    media="(min-width: 320px)"
+                                />
+                                <img
+                                    src="images/img-1.jpg"
+                                    alt="Фото Игоря Демьяненко"
+                                />
+                            </picture>
+
                             <div class="team__card">
                                 <h3 class="team__members">Ігор Дем'яненко</h3>
                                 <p class="team__position" lang="en">
@@ -345,12 +354,21 @@
                                 </ul>
                             </div>
                         </li>
-                        <li>
-                            <img
-                                src="images/img-2.jpg"
-                                alt="Фото Ольги Репиной"
-                                width="270"
-                            />
+                        <li class="team__item">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/member2.jpg    1x,
+                                        ./images/member2@2x.jpg 2x
+                                    "
+                                    media="(min-width: 320px)"
+                                />
+                                <img
+                                    src="images/img-2.jpg"
+                                    alt="Фото Ольги Репиной"
+                                />
+                            </picture>
+
                             <div class="team__card">
                                 <h3 class="team__members">Ольга Репіна</h3>
                                 <p class="team__position" lang="en">
@@ -409,12 +427,21 @@
                                 </ul>
                             </div>
                         </li>
-                        <li>
-                            <img
-                                src="images/img-3.jpg"
-                                alt="Фото Николая Тарасова"
-                                width="270"
-                            />
+                        <li class="team__item">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/member3.jpg    1x,
+                                        ./images/member3@2x.jpg 2x
+                                    "
+                                    media="(min-width: 320px)"
+                                />
+                                <img
+                                    src="images/img-3.jpg"
+                                    alt="Фото Николая Тарасова"
+                                />
+                            </picture>
+
                             <div class="team__card">
                                 <h3 class="team__members">Микола Тарасов</h3>
                                 <p class="team__position" lang="en">
@@ -473,12 +500,21 @@
                                 </ul>
                             </div>
                         </li>
-                        <li>
-                            <img
-                                src="images/img-4.jpg"
-                                alt="Фото Михаила Ермакова"
-                                width="270"
-                            />
+                        <li class="team__item">
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/member4.jpg    1x,
+                                        ./images/member4@2x.jpg 2x
+                                    "
+                                    media="(min-width: 320px)"
+                                />
+                                <img
+                                    src="images/img-4.jpg"
+                                    alt="Фото Михаила Ермакова"
+                                />
+                            </picture>
+
                             <div class="team__card">
                                 <h3 class="team__members">Михайло Єрмаков</h3>
                                 <p class="team__position" lang="en">
@@ -540,7 +576,7 @@
                     </ul>
                 </div>
             </section>
-            <!--<section class="section">
+            <section class="section">
                 <div class="container">
                     <h2 class="section__title">Постійні клієнти</h2>
                     <ul class="list clients">
@@ -603,7 +639,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="section footer">
             <div class="container container--add">
                 <div class="addressWrapper">
                     <a lang="en" class="link logo logo--inFooter" href=""
@@ -723,6 +759,7 @@
                 </div>
             </div>
         </footer>
+        <!--
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="btnClose" data-modal-close>
