@@ -3,7 +3,7 @@
         display: none;
     }
 }
-/*.section--padding {
+.section--padding {
     padding-top: 0;
 }
 .occupation {
@@ -20,7 +20,7 @@
 }
 
 .occupation__title {
-    @include font(36px, 700, 42px);
+    @include font(14px, 700, 16px);
 
     text-align: center;
 
@@ -35,4 +35,4 @@
     padding-bottom: 27px;
     bottom: 0;
     width: 100%;
-}*/
+}
