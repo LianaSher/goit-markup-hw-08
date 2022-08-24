@@ -100,6 +100,26 @@
 .subscribeForm__icon {
     margin-left: 12px;
 }
+@media screen and (min-width: 768px) {
+    .container--add {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+    .addressWrapper {
+        margin-right: 165px;
+        margin-left: 60px;
+    }
+    .logo--inFooter {
+        margin-right: 0;
+    }
+    .subscribeForm__input {
+        width: 450px;
+    }
+    .subscription {
+        margin-left: 150px;
+    }
+}
 
 /*.logo--inFooter {
     margin-bottom: 20px;
