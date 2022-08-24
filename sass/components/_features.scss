@@ -20,8 +20,31 @@
     @include font($lh: 24px);
     color: var(--font-color-text);
 }
-.features__item:not(:last-child) {
-    margin-bottom: 30px;
+
+@media screen and (max-width: 767px) {
+    .features__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .features__icons {
+        width: 354px;
+        height: 120px;
+    }
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .features__subtitle {
+        text-align: start;
+    }
+    .features__item {
+        display: block;
+    }
+    .features__text {
+        max-width: 354px;
+    }
 }
 /*.features {
     display: flex;

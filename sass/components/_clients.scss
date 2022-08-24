@@ -27,6 +27,11 @@
         fill: var(--color-selected);
     }
 }
+@media screen and (min-width: 768px) {
+    .clients__item {
+        width: 226px;
+    }
+}
 /*.clients {
     display: flex;
     gap: 30px;
